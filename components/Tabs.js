@@ -17,7 +17,7 @@ axios
     .then(response => {
         response.data.topics.forEach(topic => {
             let newTab = Tab(topic);
-            return newTab;
+            return newTab
         });    
     });
 
