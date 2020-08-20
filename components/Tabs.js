@@ -13,11 +13,11 @@
 let topicsSection = document.querySelector(".topics");
 
 axios
-    .get("https://lambda-times-backend.herokuapp.com/topics")
+    .get(" https://lambda-times-api.herokuapp.com/topics")
     .then(response => {
         response.data.topics.forEach(topic => {
             let newTab = Tab(topic);
-            return newTab
+            return newTab;
         });    
     });
 

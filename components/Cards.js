@@ -22,7 +22,7 @@
 // Use your function to create a card for each of the articles, and append each card to the DOM.
 
 axios
-  .get("https://lambda-times-backend.herokuapp.com/articles")
+  .get("https://lambda-times-api.herokuapp.com/articles")
   .then(response => {
     response.data.articles["javascript"].forEach(article => {
       let newCard = Card(
